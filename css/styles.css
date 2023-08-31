@@ -9,62 +9,64 @@
 }
 
 body {
-  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
   width: 100%;
-  height: auto;
-  z-index: 5555;
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header p{
   margin: 0; 
   background: #1CD1B0;
-  padding: .6rem 1rem; 
+  padding: 1rem; 
+  font-size: 1rem;
+
 }
 header h1{
-  font-size: 2.5rem;
-  padding: 1.6rem 1rem;
+  font-size: 2rem;
+  padding: 1rem 1rem;
   background: #00669F;
+  color: white;
+  font-weight: 400;
 }
 
 main {
-  height: min-content;
+  display: flex;
   align-self: center;
-  margin: 120px;
-  margin
-  padding: auto;
+  margin: 1rem;
 }
 
 .card-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  width: 95vw;
   display: flex;
-  flex-wrap: nowrap;
-  row-gap: 3rem;
-  column-gap: 1.6rem;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: 33.33%;
-  flex-grow: 1;
+  width: 30vh;
+  flex-direction: row;
+  margin: 2rem;
 }
 
 .batman_bg { background-image: url("../img/batman_bg.jpg"); }
-.harley_bg { background-image: url("../img/harley_bg.jpg"); }
+.wonderwoman_bg { background-image: url("../img/wonderwoman_bg.png");}
+.harley_bg { background-image: url("../img/harley_bg.jpg")}
+.superman_bg{background-image: url("../img/superman_bg.png");}
 .card-bg {
   position: relative;
-  width: 400px;
-  height: 236px;
+  width: 100%;
+  height: 30%;
   flex-shrink: 0;
-  background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.2rem 1.2rem 0 0;
-  padding-bottom: 4.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .card-heart {
@@ -77,8 +79,8 @@ main {
 
 .card-photo {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 40%;
+  height: 100%;
   bottom: -60px;
   left: 50%;
   transform: translateX(-50%);
@@ -90,9 +92,9 @@ main {
   text-align: center;
   padding: 4.5rem 2rem 2rem;
   box-shadow: 0 4px 4px -2px rgba(0 0 0 / .6);
-  width: 400px;
-  height: 370 px;
-  
+  width: 100%;
+  height: 80%;
+  margin-bottom: 3rem;  
 }
 
 .card-title { 
@@ -114,14 +116,14 @@ main {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   position: relative;
   background: #00669F;
   padding: 1rem;
   align-self: flex-end;
-  margin-top: 15px;
+  margin-top: 2rem;
 }
 
-footer p, footer span { color: #FFF; }
+footer p, footer span { color: #FFF; text-align: center;}
 
 footer span { text-transform: uppercase; }
